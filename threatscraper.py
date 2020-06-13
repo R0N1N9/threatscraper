@@ -15,7 +15,7 @@ print('What\'s the threat?')
 threat = input()
 
 for hash in hashlist:
-    params = {'apikey': '76be9f910ae56ef01909aaa7e5e6527ec77186e2e85d896017fadc364ae92e98', 'resource': hash}
+    params = {'apikey': <'apikey'>, 'resource': hash}
     response = requests.get(url, params=params)
 
     #print(response.json()['scans'])
